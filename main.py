@@ -6,7 +6,7 @@ outFilePath = '/data/out/tables/destination.csv'
 csvDelimiter = ','
 csvQuoteChar = '"'
 
-with open(inFilePath, 'rb') as inFile, open(outFilePath, 'wb') as outFile:
+with open(inFilePath, "rt") as inFile, open(outFilePath, 'wt') as outFile:
 	reader = csv.reader(inFile, delimiter = csvDelimiter, quotechar = csvQuoteChar)
 	writer = csv.writer(outFile, delimiter = csvDelimiter, quotechar = csvQuoteChar, quoting = csv.QUOTE_MINIMAL)
 	for row in reader:
