@@ -1,5 +1,6 @@
 import sys
 import csv
+import mechanize
 
 inFilePath = '/data/in/tables/source.csv'
 outFilePath = '/data/out/tables/destination.csv'
